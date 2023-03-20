@@ -693,6 +693,8 @@ GameObject:
   - component: {fileID: 355823768}
   - component: {fileID: 355823767}
   - component: {fileID: 355823766}
+  - component: {fileID: 355823765}
+  - component: {fileID: 355823764}
   - component: {fileID: 355823771}
   m_Layer: 0
   m_Name: Player
@@ -701,6 +703,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &355823764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355823763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad08cc7e26a7fa949b00f24ef3a45dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  startSpeed: 0
+  horizontalMovement: 0
+  verticalMovement: 0
+  movement: {x: 0, y: 0, z: 0}
+--- !u!114 &355823765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355823763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aba4979ef2aa2840bd3c4bb78fafb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalCamMovement: 0
+  horizontalCamMovement: 0
+  fppCamera: {fileID: 549606429}
 --- !u!65 &355823766
 BoxCollider:
   m_ObjectHideFlags: 0
