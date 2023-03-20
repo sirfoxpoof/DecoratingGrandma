@@ -27,18 +27,5 @@ public class SaveLoad : MonoBehaviour
         
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            SaveData();
-            Debug.Log("Save doet het");
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            LoadData();
-            Debug.Log("Load doet het");
-        }
-    }
+    
 }
