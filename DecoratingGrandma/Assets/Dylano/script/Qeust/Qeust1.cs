@@ -8,6 +8,7 @@ public class Qeust1 : MonoBehaviour
 {
     public GameObject player, buttonPannel;
     public GameObject[] stick;
+    public List<GameObject> sticks;
     public TMP_Text textMeshPro, stickUITMP;
     public int slide, maxSlide, sticksPickedUp, visebleStick, maxVisebleStick;
     public bool qeustStatus, qeustStatusIncomplete, qeustStatusComplete;
@@ -39,6 +40,7 @@ public class Qeust1 : MonoBehaviour
         QeustDialouge();
         QeustStatusIncomplete();
         QeustStatusComplete();
+        Quest();
     }
 
     // holds dialouge for the quest
@@ -102,10 +104,13 @@ public class Qeust1 : MonoBehaviour
         {
             for (visebleStick = 0; visebleStick < stick.Length; visebleStick++)
             {
-                stick[visebleStick].SetActive(true);
+                if (stick[visebleStick] != null)
+                {
+                    stick[visebleStick].SetActive(true);
+                }
             }
 
-            if (Input.GetKeyUp(KeyCode.E))
+            if (Input.GetKeyUp(KeyCode.E))      
             {
                 slide = 6;
                 StartCoroutine(Delay());
@@ -138,8 +143,13 @@ public class Qeust1 : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 sticksPickedUp += 1;
-                Destroy(stick[sticksPickedUp]);
                 Debug.Log("e has been pressed");
+
+                if (stick[sticksPickedUp] != null)
+                {
+                    Destroy(stick[sticksPickedUp]);
+                    //sticks.Remove(stick);
+                }
             }
 
             if (sticksPickedUp == 5)
