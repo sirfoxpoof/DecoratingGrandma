@@ -12,12 +12,12 @@ public class Movement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
 
-        startSpeed = 3;
+        startSpeed = 10;
         moveSpeed = startSpeed;
         sprintSpeed = 5;
 
         sprint = false;
-        stamina = 100;
+        stamina = 200;
     }
 
     // Update is called once per frame
