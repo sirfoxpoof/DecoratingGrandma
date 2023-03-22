@@ -14,12 +14,7 @@ public class Movement : MonoBehaviour
 
         startSpeed = 10;
         moveSpeed = startSpeed;
-<<<<<<< Updated upstream
-        sprintSpeed = 20;
-=======
         sprintSpeed = 15;
->>>>>>> Stashed changes
-
         sprint = false;
         stamina = 100;
     }

@@ -137,7 +137,7 @@ public class Qeust1 : MonoBehaviour
 
     public void Quest()
     {
-        if (qeustStatusIncomplete == true)
+        if (qeustStatusIncomplete == true && Vector3.Distance(player.transform.position, transform.position) < 5f)
         {
 
             if (Input.GetKeyDown(KeyCode.E))
