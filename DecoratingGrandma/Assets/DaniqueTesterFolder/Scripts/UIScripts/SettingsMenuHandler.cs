@@ -11,6 +11,8 @@ public class SettingsMenuHandler : MonoBehaviour
     public void Start()
     {
         mainMenu.gameObject.SetActive(false);
+        Time.timeScale = 1;
+
     }
 
     public void Update()
