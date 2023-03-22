@@ -14,10 +14,10 @@ public class Movement : MonoBehaviour
 
         startSpeed = 10;
         moveSpeed = startSpeed;
-        sprintSpeed = 5;
+        sprintSpeed = 20;
 
         sprint = false;
-        stamina = 200;
+        stamina = 100;
     }
 
     // Update is called once per frame
