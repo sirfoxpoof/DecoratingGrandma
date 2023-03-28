@@ -9,7 +9,7 @@ public class NavMesh : MonoBehaviour
     public bool chasePlayer, alerted;
     public GameObject Player;
     public float chasePlayerDistance, speed;
-    public Transform enemy, point, goal;
+    public Transform enemy, point;
     public Transform[] waypoints;
     public int waypoint;
     public float isInRange;
@@ -33,7 +33,7 @@ public class NavMesh : MonoBehaviour
         else
         {
             float distance = Vector3.Distance(enemy.transform.position, waypoints[waypoint].transform.position);
-            if (distance < isInRange)
+            if (distance < 5)
             {
                 if (waypoint == waypoints.Length -1 )
                 {
@@ -47,7 +47,7 @@ public class NavMesh : MonoBehaviour
             }
 
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
-            agent.destination = goal.position;
+            agent.destination = waypoints[waypoint].position;
 
 
         }
