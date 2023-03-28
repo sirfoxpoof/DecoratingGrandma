@@ -10,7 +10,10 @@ public class PlayerData : MonoBehaviour
 
     private void Update()
     {
-
+        if (healthAmount <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void SavePosition ()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NpcHP : MonoBehaviour
 {
-    public float damage, health;
+    public int damage, health;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +18,10 @@ public class NpcHP : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        collision.gameObject.GetComponent<PlayerData>().healthAmount -= damage;
+
     }
 }

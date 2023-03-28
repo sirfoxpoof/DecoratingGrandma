@@ -6,7 +6,7 @@ using TMPro;
 public class Damage : MonoBehaviour
 {
     private NpcHP npcHp;
-    public float damage;
+    public int damage;
 
     // Start is called before the first frame update
     void Start()

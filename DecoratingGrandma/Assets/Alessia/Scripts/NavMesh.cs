@@ -9,7 +9,7 @@ public class NavMesh : MonoBehaviour
     public bool chasePlayer, alerted;
     public GameObject Player;
     public float chasePlayerDistance, speed;
-    public Transform enemy, point;
+    public Transform enemy;
     public Transform[] waypoints;
     public int waypoint;
     public float isInRange;

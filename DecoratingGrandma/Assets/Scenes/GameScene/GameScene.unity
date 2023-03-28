@@ -9525,7 +9525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 449f0c1f991655749a76d3cf4d1b05ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthAmount: 0
+  healthAmount: 100
   player: {fileID: 2028604628}
   positionX: 0
   positionY: 0
@@ -10005,13 +10005,11 @@ MonoBehaviour:
   chasePlayerDistance: 10
   speed: 0
   enemy: {fileID: 2112440604}
-  point: {fileID: 271797767}
-  goal: {fileID: 2029512756}
   waypoints:
   - {fileID: 2135859215}
   - {fileID: 1693590381}
   - {fileID: 2029512756}
-  waypoint: 2
+  waypoint: 0
   isInRange: 0
 --- !u!195 &2112440609
 NavMeshAgent:
@@ -10047,8 +10045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5205084cd07e21e41af4b9866984725a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  health: 0
+  damage: 20
+  health: 100
 --- !u!1 &2116854318
 GameObject:
   m_ObjectHideFlags: 0
@@ -10728,6 +10726,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2230606945373767761, guid: ff91f91b186ed2d4da480d74f37c4e5e, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 2230606945373767766, guid: ff91f91b186ed2d4da480d74f37c4e5e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10770,6 +10772,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2230606945373767766, guid: ff91f91b186ed2d4da480d74f37c4e5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230606945373767767, guid: ff91f91b186ed2d4da480d74f37c4e5e, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230606945373767767, guid: ff91f91b186ed2d4da480d74f37c4e5e, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
