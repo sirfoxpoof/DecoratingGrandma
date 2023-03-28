@@ -12,7 +12,7 @@ public class SaveLoad : MonoBehaviour
 
         playerData.SavePosition();
         PlayerPrefs.SetFloat("playerPositionX", playerData.positionX);
-        PlayerPrefs.SetFloat("playerPositionY", playerData.positionY);
+        PlayerPrefs.SetFloat("playerPositionY", playerData.positionY + 1f);
         PlayerPrefs.SetFloat("playerPositionZ", playerData.positionZ);
         PlayerPrefs.Save();
     }

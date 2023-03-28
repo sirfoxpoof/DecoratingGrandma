@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DaniqueTesterFolder/DaniqueScenes/TestMenuScene.unity
     guid: 9cbc273d023f9144a8dae519ed9c9015
-  - enabled: 0
-    path: Assets/DaniqueTesterFolder/DaniqueScenes/SettingsScene.unity
-    guid: ac4fd4314556a944cb801186ee68efd8
   - enabled: 1
     path: Assets/Scenes/GameScene/GameScene.unity
     guid: 59d28329211e4cb45a7b64e2fbbe0f72

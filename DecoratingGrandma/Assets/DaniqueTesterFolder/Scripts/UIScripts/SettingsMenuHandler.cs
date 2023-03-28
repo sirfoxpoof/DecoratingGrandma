@@ -17,14 +17,14 @@ public class SettingsMenuHandler : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
             Cursor.lockState = CursorLockMode.None;
             
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             saveLoadScript.LoadData();
         }
