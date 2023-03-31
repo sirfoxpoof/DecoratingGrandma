@@ -27,10 +27,8 @@ public class PlayerData : MonoBehaviour
     {
         if (healthAmount <= 0)
         {
-            /*Destroy(gameObject);*/
+            saveLoad.LoadData();
             print("dood");
-
-
         }
     }
 
@@ -44,7 +42,7 @@ public class PlayerData : MonoBehaviour
     public void NewGamePosition()
     {
         positionX = 1;
-        positionY = 1;
+        positionY = 2;
         positionZ = 1;
 
         player.transform.position = new Vector3(

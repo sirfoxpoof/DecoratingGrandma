@@ -22,7 +22,7 @@ public class NpcHP : MonoBehaviour
     }
 
     //zecht dat asl er twee colliders met elkaar botsen dat er dam health af gaat
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         collision.gameObject.GetComponent<PlayerData>().healthAmount -= damage;
     }

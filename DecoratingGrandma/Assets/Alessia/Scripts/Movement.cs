@@ -14,9 +14,8 @@ public class Movement : MonoBehaviour
 
         startSpeed = 10;
         moveSpeed = startSpeed;
-        sprintSpeed = 15;
+        sprintSpeed = 30;
         sprint = false;
-        stamina = 100;
     }
 
     // Update is called once per frame
@@ -34,13 +33,15 @@ public class Movement : MonoBehaviour
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
         // Als je de key linker shift indrukt dan veranderd de speed 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
+            Debug.Log("sprint");
             moveSpeed = sprintSpeed;
         }
 
         else
         {
+            Debug.Log("notsprint");
             moveSpeed = startSpeed;
         }
 
