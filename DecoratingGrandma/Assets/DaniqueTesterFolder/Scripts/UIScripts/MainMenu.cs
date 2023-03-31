@@ -8,11 +8,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject panel;
     
-    public void PlayGame()
+    public void NewGameButton()
     {
+        PlayerPrefs.SetInt("StartPosition", 0);
         SceneManager.LoadScene("GameScene");
+        print("start new game");
 
     }
 
@@ -24,22 +25,11 @@ public class MainMenu : MonoBehaviour
     
     public void ContinueButton()
     {
-        /*if(PlayerPrefs.GetString("SaveDataExists") == "True")
-        {
-            playerData.healthAmount = PlayerPrefs.GetInt("playerHealth");
-            playerData.positionX = PlayerPrefs.GetFloat("playerPositionX");
-            playerData.positionY = PlayerPrefs.GetFloat("playerPositionY");
-            playerData.positionZ = PlayerPrefs.GetFloat("playerPositionZ");
-            playerData.LoadPosition();
-        }
-              
+        PlayerPrefs.SetInt("StartPosition", 1);
+        SceneManager.LoadScene("GameScene");
+        print("continue game");
 
-        else
-        {
-            panel.SetActive(true);
 
-        }*/
-        
     }
         
 
