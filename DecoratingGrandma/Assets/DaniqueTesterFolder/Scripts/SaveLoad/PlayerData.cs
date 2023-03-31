@@ -27,7 +27,10 @@ public class PlayerData : MonoBehaviour
     {
         if (healthAmount <= 0)
         {
-            Destroy(gameObject);
+            /*Destroy(gameObject);*/
+            print("dood");
+
+
         }
     }
 

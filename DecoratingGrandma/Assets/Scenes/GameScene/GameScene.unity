@@ -9373,7 +9373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028604628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.818, y: 0.3, z: 0.17}
+  m_LocalPosition: {x: -14.6, y: 0.3, z: 0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9530,7 +9530,7 @@ MonoBehaviour:
   positionX: 0
   positionY: 0
   positionZ: 0
-  saveLoad: {fileID: 2028604638}
+  saveLoad: {fileID: 0}
 --- !u!114 &2028604640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10000,18 +10000,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a863f4679af07549af00c7ac2940470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chasePlayer: 0
-  alerted: 0
   Player: {fileID: 2028604628}
-  chasePlayerDistance: 10
-  speed: 0
+  chasePlayerDistance: 5
   enemy: {fileID: 2112440604}
   waypoints:
   - {fileID: 2135859215}
   - {fileID: 1693590381}
   - {fileID: 2029512756}
   waypoint: 0
-  isInRange: 0
 --- !u!195 &2112440609
 NavMeshAgent:
   m_ObjectHideFlags: 0

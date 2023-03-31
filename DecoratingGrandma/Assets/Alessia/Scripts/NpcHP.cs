@@ -14,14 +14,16 @@ public class NpcHP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // als health minder dan 100 is word het object waar dit script op staat verwijdert
         if (health <= 0)
         {
             Destroy(gameObject);
         }
     }
+
+    //zecht dat asl er twee colliders met elkaar botsen dat er dam health af gaat
     private void OnCollisionStay(Collision collision)
     {
         collision.gameObject.GetComponent<PlayerData>().healthAmount -= damage;
-
     }
 }

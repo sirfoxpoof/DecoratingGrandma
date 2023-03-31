@@ -16,13 +16,17 @@ public class Cameramovement : MonoBehaviour
 
     void Update()
     {
+        //Float wordt verbonden aan welke as hij moet pakken
         mouseX = Input.GetAxis("Mouse X") * sensitivity;
         mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 
+        // Pinnetjes systeem
         lookDirectionBody.y = mouseX;
         lookDirectionCamera.x = -mouseY;
 
+        //Zorgt ervoor dat ze beide kunnen rotaten 
         bodyTransform.Rotate(lookDirectionBody);
         cameraTransform.Rotate(lookDirectionCamera);
+
     }
 }

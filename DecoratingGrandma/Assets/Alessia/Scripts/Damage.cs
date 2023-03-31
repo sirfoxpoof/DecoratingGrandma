@@ -22,7 +22,6 @@ public class Damage : MonoBehaviour
 
     public void OnTriggerStay(Collider collision)
     {
-        print("enemy");
         npcHp = collision.gameObject.GetComponent<NpcHP>();
 
         if (Input.GetMouseButtonDown(0) && collision.transform.tag == "Enemy")

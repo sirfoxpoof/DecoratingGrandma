@@ -22,22 +22,21 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Float wordt verbonden aan welke as hij moet pakken
         horizontalMovement = Input.GetAxis("Horizontal");
         verticalMovement = Input.GetAxis("Vertical");
 
+        // movement.x is gelijk aan horizontalmovement dus dat betekent dat hij aangeeft dat hij op de horizontal as kan bewegen.
         movement.x = horizontalMovement;
         movement.z = verticalMovement;
 
+        //De transform.Translate zorgt ervoor dat je de goede kant op kan lopen
         transform.Translate(movement * moveSpeed * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        // Als je de key linker shift indrukt dan veranderd de speed 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            sprint = true;
-
-            if (sprint == true)
-            {
-                moveSpeed = sprintSpeed;
-            }
+            moveSpeed = sprintSpeed;
         }
 
         else

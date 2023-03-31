@@ -6,17 +6,15 @@ using static UnityEngine.GraphicsBuffer;
 
 public class NavMesh : MonoBehaviour
 {
-    public bool chasePlayer, alerted;
     public GameObject Player;
-    public float chasePlayerDistance, speed;
+    public float chasePlayerDistance;
     public Transform enemy;
     public Transform[] waypoints;
     public int waypoint;
-    public float isInRange;
     // Start is called before the first frame update
     public void Start()
     {
-        chasePlayer = true;
+      
 
     }
 
@@ -25,35 +23,31 @@ public class NavMesh : MonoBehaviour
     {
         //Debug.DrawRay(transform.position, transform.forward * 1, Color.Yellow);
 
-
+        //Afstand player en chasePlayerDistance kleiner dan 
         if (Vector3.Distance(Player.transform.position, transform.position) < chasePlayerDistance)
-        {
+        { 
                 GetComponent<NavMeshAgent>().SetDestination(Player.transform.position);
         }
         else
         {
+            //Pakt in de Vector3 de afstand tussen de enemy position en de waypoints positions
             float distance = Vector3.Distance(enemy.transform.position, waypoints[waypoint].transform.position);
             if (distance < 5)
-            {
+            {   //Waypoint verhaal
                 if (waypoint == waypoints.Length -1 )
                 {
                     waypoint = 0;
                 }
-
                 else
                 {
                     waypoint++;
                 }
             }
-
+            //Zet de NavMesh agent bestemming naar de waypoint positie
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
             agent.destination = waypoints[waypoint].position;
-
-
         }
     }
-
-
 }
 
  
