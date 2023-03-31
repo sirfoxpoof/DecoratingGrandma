@@ -43,9 +43,9 @@ public class PlayerData : MonoBehaviour
 
     public void NewGamePosition()
     {
-        positionX = 0;
+        positionX = 1;
         positionY = 1;
-        positionZ = 0;
+        positionZ = 1;
 
         player.transform.position = new Vector3(
             positionX,
