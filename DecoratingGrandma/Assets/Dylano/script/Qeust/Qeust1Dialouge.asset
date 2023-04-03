@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: Qeust1Dialouge
   m_EditorClassIdentifier: 
   dialouge:
-  - Press e to continue
-  - Hey friend i need your help with something
-  - ' I need you to gather some sticks for me if you do there is a reward in it for
-    for you'
+  - Press F to interact
+  - Hey friend I lost my favourete Stick can you help me find it?
+  - if you do there is a reward in there for you
   - So what do you say
-  - ' Okay came back if you have all 5 sticks'
+  - thank you come back when you find it
   - Alright come back if you change your mind
   - "You aren\u2019t done yet please come back if you are done "
   - " Thanks you\u2019re rewards are in your house"
