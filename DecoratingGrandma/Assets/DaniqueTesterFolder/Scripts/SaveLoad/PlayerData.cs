@@ -9,7 +9,7 @@ public class PlayerData : MonoBehaviour
     public float positionX, positionY, positionZ;
     public SaveLoad saveLoad;
 
-    public void Awake()
+    public void Start()
     {
         if(PlayerPrefs.GetInt("StartPosition") == 0)
         {

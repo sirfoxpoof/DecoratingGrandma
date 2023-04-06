@@ -8,11 +8,12 @@ public class SettingsMenuHandler : MonoBehaviour
 {
     public SaveLoad saveLoadScript;
     public Canvas mainMenu;
+    
     public void Start()
     {
         mainMenu.gameObject.SetActive(false);
         Time.timeScale = 1;
-
+        
     }
 
     public void Update()
@@ -21,14 +22,9 @@ public class SettingsMenuHandler : MonoBehaviour
         {
             PauseGame();
             Cursor.lockState = CursorLockMode.None;
-            
-        }
+            Cursor.visible = true;
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            saveLoadScript.LoadData();
         }
-         
     }
 
     public void BackToMainMenu()
