@@ -22,7 +22,10 @@ public class Cameramovement : MonoBehaviour
 
         // Pinnetjes systeem
         lookDirectionBody.y = mouseX;
+        
+        mouseY = Mathf.Clamp(mouseY, -90f, 90);
         lookDirectionCamera.x = -mouseY;
+        
 
         //Zorgt ervoor dat ze beide kunnen rotaten 
         bodyTransform.Rotate(lookDirectionBody);

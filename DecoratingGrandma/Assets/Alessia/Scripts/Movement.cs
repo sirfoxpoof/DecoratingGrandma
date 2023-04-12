@@ -35,13 +35,13 @@ public class Movement : MonoBehaviour
         // Als je de key linker shift indrukt dan veranderd de speed 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            Debug.Log("sprint");
+            //Debug.Log("sprint");
             moveSpeed = sprintSpeed;
         }
 
         else
         {
-            Debug.Log("notsprint");
+            //.Log("notsprint");
             moveSpeed = startSpeed;
         }
 
