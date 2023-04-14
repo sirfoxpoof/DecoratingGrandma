@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class BaseQuest : MonoBehaviour
 {
-    public GameObject player, buttonPannel; //crossAirCanvas;
+    public GameObject player, buttonPannel;
     public TMP_Text questText;
     public int slide, maxSlide;
     public bool questStatus, questStatusInComplete, questStatusComplete, questAccepted, questDiclined;

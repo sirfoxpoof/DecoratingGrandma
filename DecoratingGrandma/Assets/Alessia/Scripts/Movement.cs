@@ -7,6 +7,8 @@ public class Movement : MonoBehaviour
     public float moveSpeed, sprintSpeed, startSpeed, horizontalMovement, verticalMovement, stamina;
     public bool sprint;
     public Vector3 movement;
+    public Tuturial tuturial;
+
     // Start is called before the first frame update
     void Start()
     {
